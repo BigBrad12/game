@@ -1,1 +1,11 @@
+**/*.gd.uid
 **.gd.uid
+**/*.tscn.uid
+**/*.tres.uid
+**/*.png.uid
+**/*.jpg.uid
+**/*.jpeg.uid
+**/*.gif.uid
+**/*.bmp.uid
+**/*.tiff.uid
+**/*.ico.uid
