@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3]
+[gd_scene load_steps=5 format=3 uid="uid://d1wcuyfw5u1ec"]
 
-[ext_resource type="Script" path="res://Main.gd" id="1_5p8v1"]
-[ext_resource type="Script" path="res://TileManager.gd" id="2_tilemanager"]
-[ext_resource type="Script" path="res://WorldGenerator.gd" id="3_worldgenerator"]
-[ext_resource type="Script" path="res://WorldRenderer.gd" id="4_worldrenderer"]
+[ext_resource type="Script" uid="uid://ctucpt0bi0sdm" path="res://Main.gd" id="1_5p8v1"]
+[ext_resource type="Script" uid="uid://c75v0arnpk4vh" path="res://TileManager.gd" id="2_tilemanager"]
+[ext_resource type="Script" uid="uid://c5j8xs5v8asad" path="res://WorldGenerator.gd" id="3_worldgenerator"]
+[ext_resource type="Script" uid="uid://ci7o7svu8k8af" path="res://WorldRenderer.gd" id="4_worldrenderer"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_5p8v1")

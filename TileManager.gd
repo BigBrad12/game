@@ -61,7 +61,7 @@ func setup_tileset():
 		var tile_data = atlas_source.get_tile_data(atlas_coords, 0)
 		# Set up tile properties if needed
 		tile_data.physics_layer = 0
-		tile_data.physics_layer_0/0 = 0  # No collision for now
+		tile_data.set_collision_layer_value(0, false)  # No collision for now
 	
 	# Add the atlas source to the tileset
 	biome_tileset.add_source(atlas_source, 0)

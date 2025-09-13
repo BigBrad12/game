@@ -1,7 +1,12 @@
 extends Node2D
 
 # Main scene script that sets up and manages the world generation system
+# Updated to fix TileManager import issue
 
+# Explicit preloads to ensure classes are available
+const TileManagerScript = preload("res://TileManager.gd")
+const WorldGeneratorScript = preload("res://WorldGenerator.gd")
+const WorldRendererScript = preload("res://WorldRenderer.gd")
 
 var world_renderer: WorldRenderer
 var tile_manager: TileManager
@@ -9,6 +14,15 @@ var world_generator: WorldGenerator
 
 func _ready():
 	print("Starting Talu Game - World Generator")
+	
+	# Test if TileManager class is available
+	print("Testing TileManager class availability...")
+	var test_tile_manager = TileManager.new()
+	if test_tile_manager:
+		print("TileManager class is available!")
+		test_tile_manager.queue_free()
+	else:
+		print("ERROR: TileManager class not available!")
 	
 	# Get references to the components (they're already in the scene)
 	tile_manager = get_node("TileManager") as TileManager
