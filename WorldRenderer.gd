@@ -40,7 +40,7 @@ func setup_camera():
 	camera.name = "Camera"
 	camera.zoom = Vector2(1.0, 1.0)
 	add_child(camera)
-	make_current()
+	camera.make_current()
 
 func setup_tilemap():
 	"""Setup TileMap for world rendering"""
