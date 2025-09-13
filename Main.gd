@@ -2,6 +2,7 @@ extends Node2D
 
 # Main scene script that sets up and manages the world generation system
 
+
 var world_renderer: WorldRenderer
 var tile_manager: TileManager
 var world_generator: WorldGenerator
